@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='index.css'>
-    <script src='main.js'></script>
-</head>
-<body>
     
+    <style>
+        #gameArea {
+            background-color: rgb(63, 121, 141);
+            width: 50vw;
+            height:50vw;
+            min-width: 300px;
+            min-height: 300px;
+            max-width: 100vh;
+            max-height: 100vh;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/7f093e4826.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- <p> bạn có 15 giây để điền các từ vào đúng ô trống</p>
+    <div class="definition">
+        <div>
+            <p class="meaning"><span class="blank" id="background-color"></span>: màu nền</p>
+            <p class="meaning"><span class="blank" id="color"></span>: màu chữ</p>
+            <p class="meaning"><span class="blank" id="margin"></span>: khoảng trống ngoài viền</p>
+            <p class="meaning"><span class="blank" id="padding"></span>: đệm</p>
+            <p class="meaning"><span class="blank" id="border"></span>: viền</p>
+            <p class="meaning"><span class="blank" id="font-size"></span>: cỡ chữ</p>
+            <p class="meaning"><span class="blank" id="font-weight"></span>: độ dày chữ</p>
+            <p class="meaning"><span class="blank" id="font-family"></span>: phông chữ</p>
+        </div>
+        <div id="time"></div>
+    </div>
+    <div class="cssLists">
+        <p class="css" draggable="true">color</p>
+        <p class="css" draggable="true">background-color</p>
+        <p class="css" draggable="true">margin</p>
+        <p class="css" draggable="true">border</p>
+        <p class="css" draggable="true">padding</p>
+        <p class="css" draggable="true">font-family</p>
+        <p class="css" draggable="true">font-size</p>
+        <p class="css" draggable="true">font-weight</p>
+    </div> -->
+
+    
+    <div id="gameArea" style="border:1px solid black">
+        <i style="color: red; font-size: 50px" class="fa-solid fa-frog"></i>
+        <i style="color: yellow; font-size: 50px" class="fa-solid fa-frog"></i>
+        <i style="color: rgb(46, 212, 46); font-size: 50px" class="fa-solid fa-frog"></i>
+    </div>
+    <p>type a color to change the background-color: </p>
+    <textarea id="userCode" rows="4" cols="50"></textarea>
+    
+    
+
+    <script src='main.js'></script>
 </body>
+
 </html>
